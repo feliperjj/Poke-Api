@@ -1,29 +1,44 @@
-# poke-api
+Projeto Vue.js com Vite: Pokédex
+Visão Geral
 
-This template should help get you started developing with Vue 3 in Vite.
+Este projeto é uma Pokédex construída com Vue.js utilizando a ferramenta de construção rápida Vite. Ele consome a PokeAPI para exibir informações de todos os Pokémon disponíveis.
+Funcionalidades
 
-## Recommended IDE Setup
+    Exibe uma lista de todos os Pokémon disponíveis.
+    Permite aos usuários visualizar detalhes individuais de cada Pokémon, como tipo, habilidades e imagem.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Tecnologias Utilizadas
 
-## Customize configuration
+    Vue.js: Um framework progressivo JavaScript para a construção de interfaces de usuário.
+    Vite: Uma ferramenta de desenvolvimento rápida para projetos Vue.js e JavaScript.
+    PokeAPI: Uma API pública que fornece informações sobre Pokémon.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Instalação
 
-## Project Setup
+    Clone este repositório:
 
-```sh
-npm install
-```
+    bash
 
-### Compile and Hot-Reload for Development
+git clone https://github.com/feliperjj/Poke-Api.git
 
-```sh
+Navegue até o diretório do projeto:
+
+bash
+
+cd pokedex-vue-vite
+
+Instale as dependências:
+
+bash
+
+    npm install
+
+Uso
+
+    Inicie o servidor de desenvolvimento:
+
+    bash
+
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Abra seu navegador e acesse http://localhost:3000.
