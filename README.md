@@ -13,6 +13,9 @@ Tecnologias Utilizadas
     Vite: Uma ferramenta de desenvolvimento rápida para projetos Vue.js e JavaScript.
     PokeAPI: Uma API pública que fornece informações sobre Pokémon.
 
+
+Aplicação Online: https://poke-api-lgm5.vercel.app/
+
 Instalação
 
     Clone este repositório:
