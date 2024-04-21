@@ -46,6 +46,7 @@ const pokemon = defineProps(["name","xp","game_indices","moves","img"])
 }
 .CardPokemonSelected img{
     height: 250px;
+    width: auto; /* Add this to maintain aspect ratio */
 }
 
 .moves {
@@ -56,17 +57,18 @@ const pokemon = defineProps(["name","xp","game_indices","moves","img"])
 .game-indices {
   color: #black; 
   font-weight: bold; 
-  font-style: italic; /* Texto em itálico para 'game_indices' */
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
     .CardPokemonSelected{
-        min-height: 30vh; /* Use min-height instead of height */
-        width: 40%;
+        min-height: 30vh; 
+        width: 100%; 
         margin: 0 auto 10px auto;
     }
     .CardPokemonSelected img{
-        height: 100px;
+        height: auto;
+        max-width: 100%; 
     }
 }
 </style>
