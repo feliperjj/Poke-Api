@@ -36,16 +36,16 @@ await fetch(pokemon.url)
 <template>
   <main>
   <div class="row mt-5 ms-5">
-  <div class="col-sm-12 col-md-6">
+  <div class="col-sm-12 col-md-6 card-list">
   
   <CardPokeonSelected
    :name="pokemonSelected?.name"
    :xp="pokemonSelected?.base_experience"
-   :game_indices="pokemonSelected?.game_indices.name"
-   :moves="pokemonSelected?.moves.name"
-    :img="pokemonSelected?.sprites.other.dream_world.front_default"
-    :loading="loading"
-  />
+   :game_indices="pokemonSelected?.game_indices.map(game => game.version.name)"
+   :moves="pokemonSelected?.moves.map(move => move.move.name)"
+   :img="pokemonSelected?.sprites.other.dream_world.front_default"
+   :loading="loading"
+/>
   
   
  
@@ -87,7 +87,7 @@ await fetch(pokemon.url)
 <style scoped>
 .card-list{
   max-height: 80vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 

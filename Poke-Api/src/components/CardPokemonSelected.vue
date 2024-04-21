@@ -39,7 +39,7 @@ const pokemon = defineProps(["name","xp","game_indices","moves","img"])
 
 <style scoped>
 .CardPokemonSelected{
-    height: 75vh;
+    min-height: 75vh; /* Use min-height instead of height */
     background: rgb(72,63,251);
     background: radial-gradient(circle, rgba(220, 194, 106, 0.8) 0%, rgba(244, 0, 0, 0.8) 100%);
 }
@@ -49,7 +49,7 @@ const pokemon = defineProps(["name","xp","game_indices","moves","img"])
 
 @media (max-width: 768px) {
     .CardPokemonSelected{
-        height: 30vh;
+        min-height: 30vh; /* Use min-height instead of height */
         width: 40%;
         margin: 0 auto 10px auto;
     }
