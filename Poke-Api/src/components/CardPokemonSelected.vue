@@ -16,13 +16,13 @@ const pokemon = defineProps(["name","xp","game_indices","moves","img"])
      
      </section>
        <section class="col">
-    <strong>Game Indices:</strong>   
+    <strong>Game Indices: </strong>   
     <span class="game-indices">{{pokemon.game_indices}}</span>  
      
      </section>
     
        <section class="col">
-    <strong>moves:</strong>   
+    <strong>Moves: </strong>   
     <span class="moves">{{pokemon.moves}}</span>  
      
     

@@ -38,14 +38,13 @@ await fetch(pokemon.url)
   <div class="row mt-5 ms-5">
   <div class="col-sm-12 col-md-6 card-list">
   
-  <CardPokeonSelected
+<CardPokeonSelected
    :name="pokemonSelected?.name"
    :xp="pokemonSelected?.base_experience"
-   :game_indices="pokemonSelected?.game_indices.map(game => game.version.name)"
-   :moves="pokemonSelected?.moves.map(move => move.move.name)"
+   :game_indices="pokemonSelected?.game_indices.map(game => game.version.name).join(', ')"
+   :moves="pokemonSelected?.moves.map(move => move.move.name).join(', ')"
    :img="pokemonSelected?.sprites.other.dream_world.front_default"
    :loading="loading"
-   
 />
   
   
