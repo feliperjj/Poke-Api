@@ -45,6 +45,7 @@ await fetch(pokemon.url)
    :moves="pokemonSelected?.moves.map(move => move.move.name)"
    :img="pokemonSelected?.sprites.other.dream_world.front_default"
    :loading="loading"
+   
 />
   
   

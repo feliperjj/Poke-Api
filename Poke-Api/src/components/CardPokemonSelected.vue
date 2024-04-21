@@ -17,16 +17,17 @@ const pokemon = defineProps(["name","xp","game_indices","moves","img"])
      </section>
        <section class="col">
     <strong>Game Indices:</strong>   
-    <span>{{pokemon.game_indices}}</span>  
+    <span class="game-indices">{{pokemon.game_indices}}</span>  
      
      </section>
     
        <section class="col">
     <strong>moves:</strong>   
-    <span>{{pokemon.moves}}</span>  
+    <span class="moves">{{pokemon.moves}}</span>  
      
     
      </section>
+     
       
     
     </div>
@@ -45,6 +46,17 @@ const pokemon = defineProps(["name","xp","game_indices","moves","img"])
 }
 .CardPokemonSelected img{
     height: 250px;
+}
+
+.moves {
+  color: black; 
+  font-weight: bold; 
+}
+
+.game-indices {
+  color: #black; 
+  font-weight: bold; 
+  font-style: italic; /* Texto em itálico para 'game_indices' */
 }
 
 @media (max-width: 768px) {
