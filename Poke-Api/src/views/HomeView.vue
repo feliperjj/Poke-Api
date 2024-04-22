@@ -2,6 +2,8 @@
 import { onMounted, reactive, ref, computed } from "vue";
 import ListPokemons from "../components/ListPokemons.vue"
 import CardPokeonSelected from "../components/CardPokemonSelected.vue"
+import SelectLanguage from "../components/SelectLanguage.vue"
+
 
 let urlBaseSvg = ref("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/")
 let pokemons = reactive(ref());
@@ -10,7 +12,7 @@ let pokemonSelected = reactive(ref());
 let loading = ref(false)
 
 onMounted(()=>{
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=500&offset=0")
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=1306&offset=0")
   .then(res => res.json())
   .then(res => pokemons.value = res.results);
 })
@@ -46,7 +48,9 @@ await fetch(pokemon.url)
    :img="pokemonSelected?.sprites.other.dream_world.front_default"
    :loading="loading"
 />
-  
+   <SelectLanguage
+   
+   />
   
  
   </div>
